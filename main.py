@@ -1,11 +1,4 @@
-#Roman - decimal
-# I - 1
-# V - 5
-# X - 10
-# L - 50
-# C - 100
-# D - 500
-# M - 1000
+from converter import roman_to_decimal 
 
 accepted_roman = set(['I', 'V', 'X', 'L', 'C', 'D', 'M'])
 
@@ -18,3 +11,4 @@ def verify_input(user_input):
 if __name__ == "__main__":
     raw_input = input("enter a roman number: ")
     verify_input(raw_input)
+    print (roman_to_decimal(raw_input))
